@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Game of Golf</title>
+    <style>
+        body { 
+            font-family: "Helvetica Neue", sans-serif;
+            background-color: #ece6d8;
+            color: #333; 
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container { 
+            max-width: 900px; 
+            margin: auto; 
+            padding: 40px; 
+            background: white; 
+            border-radius: 10px; 
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+        .nav { 
+            display: flex; 
+            justify-content: center; 
+            margin-bottom: 30px; 
+            flex-wrap: wrap;
+        }
+        .nav a { 
+            margin: 10px; 
+            text-decoration: none; 
+            color: #008000; 
+            font-weight: bold; 
+            font-size: 18px; 
+            padding: 8px 12px; 
+            border-radius: 5px; 
+            transition: 0.3s ease; 
+        }
+        .nav a:hover { 
+            background: #008000; 
+            color: white; 
+        }
+        h1 { 
+            font-family: 'Georgia', serif; 
+            color: #8B0000; 
+            font-size: 40px; 
+            text-align: center; 
+            margin-bottom: 20px; 
+        }
+        h2 { 
+            font-family: 'Trebuchet MS', sans-serif; 
+            color: #006400; 
+            font-size: 26px; 
+            margin-top: 40px; 
+            border-bottom: 2px solid #006400; 
+            padding-bottom: 5px; 
+            text-align: center; 
+        }
+        .image { 
+            width: 100%; 
+            max-width: 600px; 
+            height: 350px; 
+            object-fit: cover;
+            border-radius: 10px; 
+            display: block; 
+            margin: 25px auto; 
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2); 
+        }
+        ul { 
+            text-align: left; 
+            margin: 20px auto; 
+            padding-left: 20px; 
+            list-style-position: inside; 
+            font-size: 18px; 
+        }
+        p { 
+            font-size: 18px; 
+        }
+        .tableau-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+        .back-to-top-link {
+            display: block;
+            text-align: center;
+            margin: 40px 0;
+            font-size: 16px;
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body id="top">
+
+    <h1>The Game of Golf</h1>
+
+    <div class="nav">
+        <a href="#pebble">Pebble Beach</a>
+        <a href="#tpc">TPC Scottsdale</a>
+        <a href="#augusta">Augusta National</a>
+        <a href="#video">Iconic Golf Moments</a>
+        <a href="#tableau">Dashboard</a>
+        <a href="#facts">Fun Facts</a>
+        <a href="#game">Mini Golf Game</a>
+        <a href="index.html">Resume</a>
+    </div>
+
+    <div class="container">
+        <h2 id="pebble">Pebble Beach's Most Iconic Hole</h2>
+        <img src="images/7holepebble.jpg" alt="7th Hole at Pebble Beach" class="image">        
+        
+        <h2 id="tpc">16th Hole at TPC Scottsdale</h2>
+        <img src="images/16holetpc.jpg" alt="16th Hole at TPC Scottsdale" class="image">        
+        
+        <h2 id="augusta">Augusta National's Most Iconic Hole</h2>
+        <img src="images/hole12.jpg" alt="12th Hole at Augusta National" class="image">
+        
+        <h2 id="video">Iconic Golf Moments</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7e2areZlw_M" frameborder="0" allowfullscreen
+                style="border-radius: 10px; display: block; margin: 0 auto; box-shadow: 2px 2px 10px rgba(0,0,0,0.2);"></iframe>
+        
+        <h2 id="tableau">Live Golf Dashboard</h2>
+        <p style="text-align: center; font-size: 18px;">
+            Explore real-time trends in golf with this interactive Tableau dashboard.
+        </p>
+
+        <div class='tableauPlaceholder tableau-container' id='viz1745288908879'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Dashboard 5' src='https://public.tableau.com/static/images/Vi/VisualHistoryofGolf/Dashboard5/1_rss.png' style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='VisualHistoryofGolf&#47;Dashboard5' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https://public.tableau.com/static/images/Vi/VisualHistoryofGolf/Dashboard5/1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>
+
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1745288908879');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '1000px';
+                vizElement.style.height = '800px';
+            } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '700px';
+            } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 1.5) + 'px';
+            }
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+
+        <h2 id="facts">Fun Facts About Golf</h2>
+        <ul>
+            <li><strong>The longest recorded drive in golf history is 515 yards.</strong></li>
+            <li><strong>Golf is one of only two sports ever played on the moon.</strong></li>
+            <li><strong>The term "birdie" originated when a golfer described a great shot as a "bird of a shot."</strong></li>
+        </ul>
+
+        <h2 id="game">Mini Golf Game</h2>
+        <p><a href="webgame.html" target="_blank" style="font-size: 18px; color: #008000; text-decoration: none;">Click here to play the mini golf game!</a></p>
+        <a href="#top" class="back-to-top-link">Back to Top</a>
+    </div>
+
+</body>
+</html>
